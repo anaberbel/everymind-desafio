@@ -3,7 +3,7 @@ const store = new SteinStore(
 );
 
 const SHEET = "login";
-const LOGIN_PAGE = "/login_form.html";
+const LOGIN_PAGE = "./login_form.html";
 
 function getFormData() {
 	let uname = document.getElementById("uname").value;
