@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://unpkg.com/stein-js-client"></script>
+		<script src="https://unpkg.com/stein-expedite@0.0.4/dist/index.js"></script>
+		<script src="./js/index.js"></script>
+		<h2>Create user</h2>
+
+		<form onsubmit="onSubmit(event, 'createUser')">
+			<div class="imgcontainer">
+				<img src="./assets/img_avatar2.png" alt="Avatar" class="avatar" />
+			</div>
+
+			<div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input
+					type="text"
+					placeholder="Enter Username"
+					name="uname"
+					id="uname"
+					required
+				/>
+
+				<label for="psw"><b>Password</b></label>
+				<input
+					type="password"
+					placeholder="Enter Password"
+					name="psw"
+					id="psw"
+					required
+				/>
+
+				<button type="submit">Criar usuário</button>
+			</div>
+		</form>
+	</body>
+</html>
